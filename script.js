@@ -15,6 +15,8 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+var correctPrompts = getPrompts();
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -27,7 +29,12 @@ generateBtn.addEventListener("click", writePassword);
  
 // generate password based on the prompts
 function generatePassword() {
-
+  var password = "";
+  for (var i = 0, i < characterLength; i++){
+    var randomPassword = Math.floor(Math.random() * choiceArray.length);
+    password = password + choiceArray[randomPassword];
+  }
+return password;
 }
 
 function getPrompts(){
