@@ -29,7 +29,7 @@ MIT license
 
 ## Screenshot
 
-![Website](./images/website.png)
+![Website](./image/website.png)
 
 ## Website Link
 
